@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoponNewPhotoponOffersViewController">
+            <connections>
+                <outlet property="photoponActivityPageControl" destination="33N-Zd-loR" id="SJi-SB-k3O"/>
+                <outlet property="photoponActivityPagesScrollView" destination="21" id="176"/>
+                <outlet property="photoponPageControl" destination="gAb-Dr-cCV" id="m7C-dT-4s8"/>
+                <outlet property="photoponPagesContainerView" destination="19" id="145"/>
+                <outlet property="photoponPagesScrollView" destination="22" id="177"/>
+                <outlet property="photoponShutterContainer" destination="146" id="178"/>
+                <outlet property="photoponToolBarView" destination="6" id="292"/>
+                <outlet property="view" destination="4" id="144"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="267" verticalHuggingPriority="267" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" id="4">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="340"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="19" userLabel="Pages">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="323"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <scrollView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="22" userLabel="Pages Scroll View" customClass="FireUIPagedScrollView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="323"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="pageControl" destination="gAb-Dr-cCV" id="jpL-hi-xkr"/>
+                            </connections>
+                        </scrollView>
+                        <scrollView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21" userLabel="Activity Pages Scroll View" customClass="FireUIPagedScrollView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="323"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="pageControl" destination="33N-Zd-loR" id="cpv-Hj-4Fa"/>
+                            </connections>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES" updatesFrequently="YES"/>
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="146" userLabel="Shutter Container">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES" image="YES"/>
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                </view>
+                <view opaque="NO" contentMode="bottom" horizontalHuggingPriority="750" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6" userLabel="ToolBar">
+                    <rect key="frame" x="0.0" y="320" width="320" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="33N-Zd-loR" userLabel="Styled Page Control Activity" customClass="StyledPageControl">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="18"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <accessibilityTraits key="traits" none="YES" button="YES" updatesFrequently="YES"/>
+                                <integer key="isElement" value="1"/>
+                            </accessibility>
+                        </view>
+                        <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gAb-Dr-cCV" customClass="StyledPageControl">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="18"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <accessibilityTraits key="traits" none="YES" button="YES" updatesFrequently="YES"/>
+                                <bool key="isElement" value="YES"/>
+                            </accessibility>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES" button="YES" image="YES" updatesFrequently="YES"/>
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <accessibility key="accessibilityConfiguration">
+                <accessibilityTraits key="traits" none="YES" updatesFrequently="YES"/>
+                <bool key="isElement" value="YES"/>
+            </accessibility>
+        </view>
+    </objects>
+</document>

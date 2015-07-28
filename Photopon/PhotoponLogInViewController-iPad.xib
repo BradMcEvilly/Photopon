@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoponLogInViewController">
+            <connections>
+                <outlet property="photoponFacebookSignup" destination="16" id="156"/>
+                <outlet property="photoponLogoSplashContainerView" destination="17" id="158"/>
+                <outlet property="photoponPrivacyReassuranceLabel" destination="26" id="157"/>
+                <outlet property="photoponSplashContainerView" destination="15" id="159"/>
+                <outlet property="view" destination="1" id="245"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default-Portrait.png" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default-Portrait-BlurredTop.png" translatesAutoresizingMaskIntoConstraints="NO" id="238">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="397"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default-Portrait-BlurredBottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="186">
+                            <rect key="frame" x="0.0" y="627" width="768" height="397"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <view autoresizesSubviews="NO" alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="164">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="397"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view autoresizesSubviews="NO" alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="197">
+                            <rect key="frame" x="0.0" y="627" width="768" height="397"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17">
+                            <rect key="frame" x="305" y="-160" width="160" height="180"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="We respect your privacy. Nothing will be shared until you say so." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="232" translatesAutoresizingMaskIntoConstraints="NO" id="26">
+                            <rect key="frame" x="268" y="977" width="232" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="232" id="27"/>
+                                <constraint firstAttribute="height" constant="28" id="28"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" white="0.0" alpha="0.080000000000000002" colorSpace="calibratedWhite"/>
+                            <size key="shadowOffset" width="1" height="1"/>
+                        </label>
+                        <button autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16" userLabel="connect-email" customClass="PhotoponUIButton">
+                            <rect key="frame" x="262" y="921" width="245" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="245" id="29"/>
+                                <constraint firstAttribute="height" constant="48" id="30"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="titleEdgeInsets" minX="74" minY="2" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" backgroundImage="PhotoponButtonFacebookLogin.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="photoponFacebookSignupHandler:" destination="-1" eventType="touchUpInside" id="246"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="16" firstAttribute="centerX" secondItem="26" secondAttribute="centerX" id="21"/>
+                        <constraint firstItem="16" firstAttribute="centerX" secondItem="17" secondAttribute="centerX" id="22"/>
+                        <constraint firstItem="26" firstAttribute="top" secondItem="16" secondAttribute="bottom" constant="8" symbolic="YES" id="132"/>
+                        <constraint firstAttribute="bottom" secondItem="26" secondAttribute="bottom" constant="19" id="150"/>
+                        <constraint firstItem="186" firstAttribute="leading" secondItem="15" secondAttribute="leading" id="194"/>
+                        <constraint firstItem="186" firstAttribute="bottom" secondItem="15" secondAttribute="bottom" id="195"/>
+                        <constraint firstItem="197" firstAttribute="leading" secondItem="15" secondAttribute="leading" id="209"/>
+                        <constraint firstItem="197" firstAttribute="trailing" secondItem="15" secondAttribute="trailing" id="211"/>
+                        <constraint firstItem="164" firstAttribute="trailing" secondItem="15" secondAttribute="trailing" id="220"/>
+                        <constraint firstItem="164" firstAttribute="leading" secondItem="15" secondAttribute="leading" id="221"/>
+                        <constraint firstItem="164" firstAttribute="top" secondItem="15" secondAttribute="top" id="225"/>
+                        <constraint firstItem="17" firstAttribute="leading" secondItem="15" secondAttribute="leading" constant="305" id="227"/>
+                        <constraint firstAttribute="bottom" secondItem="17" secondAttribute="bottom" constant="1004" id="229"/>
+                        <constraint firstItem="17" firstAttribute="top" secondItem="15" secondAttribute="top" constant="-160" id="230"/>
+                        <constraint firstItem="186" firstAttribute="centerX" secondItem="26" secondAttribute="centerX" id="234"/>
+                        <constraint firstItem="186" firstAttribute="bottom" secondItem="197" secondAttribute="bottom" id="235"/>
+                        <constraint firstItem="186" firstAttribute="top" secondItem="197" secondAttribute="top" id="236"/>
+                        <constraint firstItem="238" firstAttribute="leading" secondItem="15" secondAttribute="leading" id="240"/>
+                        <constraint firstItem="238" firstAttribute="top" secondItem="15" secondAttribute="top" id="243"/>
+                        <constraint firstItem="238" firstAttribute="bottom" secondItem="164" secondAttribute="bottom" id="244"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3" firstAttribute="top" secondItem="1" secondAttribute="top" id="4"/>
+                <constraint firstItem="3" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="5"/>
+                <constraint firstItem="3" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="6"/>
+                <constraint firstItem="15" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="57"/>
+                <constraint firstItem="15" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="61"/>
+                <constraint firstItem="15" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="140"/>
+                <constraint firstItem="15" firstAttribute="top" secondItem="1" secondAttribute="top" id="219"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Default-Portrait-BlurredBottom.png" width="768" height="397"/>
+        <image name="Default-Portrait-BlurredTop.png" width="768" height="397"/>
+        <image name="Default-Portrait.png" width="768" height="1004"/>
+        <image name="PhotoponButtonFacebookLogin.png" width="245" height="48"/>
+    </resources>
+</document>

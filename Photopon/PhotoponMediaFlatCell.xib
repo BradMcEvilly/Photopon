@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="_PhotoponMediaFlatCellIdentifier" rowHeight="477" id="wxy-Wz-XGh" customClass="PhotoponMediaFlatCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="445"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wxy-Wz-XGh" id="gom-hl-q9d">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="444"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleToFill" fixedFrame="YES" image="PhotoponBackgroundShadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="tfN-gN-iJv">
+                        <rect key="frame" x="10" y="435" width="386" height="2"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" image="PhotoponBackgroundFeedItemBody.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jfa-wF-p2a">
+                        <rect key="frame" x="8" y="365" width="304" height="70"/>
+                        <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <view clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hhO-Bp-Oq9">
+                        <rect key="frame" x="10" y="365" width="300" height="70"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                        <subviews>
+                            <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ds-Rt-s9a">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="38"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="right" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtS-Er-hEJ" customClass="PhotoponUIButton">
+                                        <rect key="frame" x="8" y="5" width="84" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES" button="YES" updatesFrequently="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-2"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-4"/>
+                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                        <state key="normal" title="0 likes">
+                                            <color key="titleColor" red="0.60784313729999995" green="0.61960784310000006" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" title="0 likes">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" title="0 likes">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleLikeStatsButtonTapped:" destination="wxy-Wz-XGh" eventType="touchUpInside" id="ect-gP-8KD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="right" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqQ-4N-SCw" customClass="PhotoponUIButton">
+                                        <rect key="frame" x="98" y="5" width="108" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES" button="YES" updatesFrequently="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-2"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-4"/>
+                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                        <state key="normal" title="0 comments">
+                                            <color key="titleColor" red="0.60784313729999995" green="0.61960784310000006" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" title="0 likes">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" title="0 likes">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleCommentStatsButtonTapped:" destination="wxy-Wz-XGh" eventType="touchUpInside" id="2tD-mE-Mqs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="right" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhl-Z5-0Up" customClass="PhotoponUIButton">
+                                        <rect key="frame" x="213" y="5" width="84" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES" button="YES" updatesFrequently="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-2"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-4"/>
+                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                        <state key="normal" title="0 snips">
+                                            <color key="titleColor" red="0.60784313729999995" green="0.61960784310000006" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" title="0 snips">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" title="0 snips">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleSnipStatsButtonTapped:" destination="wxy-Wz-XGh" eventType="touchUpInside" id="hE8-Qe-UQS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </view>
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cqb-8x-DWd">
+                                <rect key="frame" x="0.0" y="38" width="300" height="32"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="PhotoponSeparatorComments.png" translatesAutoresizingMaskIntoConstraints="NO" id="C0V-sy-oJY">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Rns-o4-kEM" customClass="PhotoponUIButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="6" maxY="-2"/>
+                                        <state key="normal" backgroundImage="PhotoponButtonFeedItemLike.png">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="PhotoponButtonFeedItemLike-on.png"/>
+                                        <state key="highlighted" backgroundImage="PhotoponButtonFeedItemLike-on.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleLikeActionsButtonTapped:" destination="wxy-Wz-XGh" eventType="touchUpInside" id="jFv-A0-HcZ"/>
+                                        </connections>
+                                    </button>
+                                    <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="gKE-n8-wrK" customClass="PhotoponUIButton">
+                                        <rect key="frame" x="92" y="0.0" width="116" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="11"/>
+                                        <color key="tintColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="6" maxY="-2"/>
+                                        <state key="normal" backgroundImage="PhotoponButtonFeedItemComment.png">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="PhotoponButtonFeedItemComment.png"/>
+                                        <state key="highlighted" backgroundImage="PhotoponButtonFeedItemComment.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleCommentActionsButtonTapped:" destination="wxy-Wz-XGh" eventType="touchUpInside" id="x0V-63-0hH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tH7-Ey-bdC" customClass="PhotoponUIButton">
+                                        <rect key="frame" x="209" y="0.0" width="94" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="6" maxY="-2"/>
+                                        <state key="normal" backgroundImage="PhotoponButtonFeedItemSnip.png">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="PhotoponButtonFeedItemSnip-on.png"/>
+                                        <state key="highlighted" backgroundImage="PhotoponButtonFeedItemSnip-on.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleSnipActionsButtonTapped:" destination="wxy-Wz-XGh" eventType="touchUpInside" id="oQ5-9B-jjl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97546875" green="0.97546875" blue="0.97546875" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B6W-ZS-hCM">
+                        <rect key="frame" x="10" y="12" width="300" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bzm-A0-XZf" customClass="PhotoponUIButton">
+                                <rect key="frame" x="13" y="9" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" label="">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="6" maxY="-2"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-5" maxY="3"/>
+                                <state key="normal" image="PhotoponPlaceholderProfileSmall.png" backgroundImage="PhotoponBackgroundProfileSmallDarkGray.png">
+                                    <color key="titleColor" red="0.050980392159999999" green="0.2901960784" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.050980392159999999" green="0.2901960784" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleUserButtonTapped:" destination="wxy-Wz-XGh" eventType="touchUpInside" id="cos-c3-mtN"/>
+                                </connections>
+                            </button>
+                            <view autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8nf-TH-Cj8">
+                                <rect key="frame" x="188" y="26" width="112" height="12"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" fixedFrame="YES" text="12/12/2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZDP-6K-Dfy">
+                                        <rect key="frame" x="52" y="-4" width="58" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES" staticText="YES" updatesFrequently="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="10"/>
+                                        <color key="textColor" red="0.49019607840000001" green="0.50196078430000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" fixedFrame="YES" text="expires:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="D1x-fK-wvs">
+                                        <rect key="frame" x="0.0" y="-4" width="48" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES" staticText="YES" updatesFrequently="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="11"/>
+                                        <color key="textColor" red="0.60784313729999995" green="0.61960784310000006" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" image="YES"/>
+                                </accessibility>
+                            </view>
+                            <button autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUh-Kp-6ho" customClass="PhotoponUIButton">
+                                <rect key="frame" x="47" y="8" width="242" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" updatesFrequently="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="FirstName LastName">
+                                    <color key="titleColor" red="0.050980392159999999" green="0.2901960784" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.050980392159999999" green="0.2901960784" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleUserButtonTapped:" destination="wxy-Wz-XGh" eventType="touchUpInside" id="Y3i-Ry-6HB"/>
+                                </connections>
+                            </button>
+                            <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uWd-6A-Ek5">
+                                <rect key="frame" x="47" y="21" width="108" height="16"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="PhotoponSubtitleIconSmall.png" translatesAutoresizingMaskIntoConstraints="NO" id="nvg-vo-ouv">
+                                        <rect key="frame" x="0.0" y="2" width="14" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="11 months ago" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="2CP-t4-kPH">
+                                        <rect key="frame" x="15" y="2" width="109" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES" staticText="YES" summaryElement="YES" updatesFrequently="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="11"/>
+                                        <color key="textColor" red="0.60784313729999995" green="0.61960784310000006" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" image="YES" summaryElement="YES"/>
+                                </accessibility>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" none="YES" updatesFrequently="YES"/>
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="PhotoponPlaceholderMediaPhoto.png" translatesAutoresizingMaskIntoConstraints="NO" id="VDC-zX-gEd">
+                        <rect key="frame" x="5" y="56" width="414" height="309"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.96277525052742619" green="0.96277525052742619" blue="0.96277525052742619" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" image="PhotoponShadowFeedItemPhoto.png" translatesAutoresizingMaskIntoConstraints="NO" id="1pj-Y2-oyM">
+                        <rect key="frame" x="0.0" y="365" width="312" height="3"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raG-oy-oEz">
+                        <rect key="frame" x="5" y="56" width="309" height="309"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="photoponBtnMediaOverlayHandler:" destination="wxy-Wz-XGh" eventType="touchUpInside" id="bgR-FM-RFA"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.95686274510000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+            <accessibility key="accessibilityConfiguration">
+                <accessibilityTraits key="traits" none="YES" button="YES" updatesFrequently="YES"/>
+                <bool key="isElement" value="YES"/>
+            </accessibility>
+            <connections>
+                <outlet property="accessoryView" destination="gom-hl-q9d" id="mCK-zz-z82"/>
+                <outlet property="backgroundPanelFooter" destination="1ds-Rt-s9a" id="yPS-ac-7nS"/>
+                <outlet property="imageView" destination="VDC-zX-gEd" id="8eu-Jb-9WF"/>
+                <outlet property="photoponBtnActionsComment" destination="gKE-n8-wrK" id="62u-TP-Qkm"/>
+                <outlet property="photoponBtnActionsLike" destination="Rns-o4-kEM" id="bxu-0s-gtc"/>
+                <outlet property="photoponBtnActionsSnip" destination="tH7-Ey-bdC" id="IhD-MH-ReX"/>
+                <outlet property="photoponBtnMediaOverlay" destination="raG-oy-oEz" id="hGS-QM-hbS"/>
+                <outlet property="photoponBtnProfileImagePerson" destination="bzm-A0-XZf" id="Sil-kl-zcE"/>
+                <outlet property="photoponBtnProfileNamePerson" destination="nUh-Kp-6ho" id="t9u-6J-gyE"/>
+                <outlet property="photoponBtnStatsComments" destination="gqQ-4N-SCw" id="dfc-qu-Wkh"/>
+                <outlet property="photoponBtnStatsLikes" destination="OtS-Er-hEJ" id="pX4-Fg-Hsu"/>
+                <outlet property="photoponBtnStatsSnips" destination="Dhl-Z5-0Up" id="gqW-BN-giA"/>
+                <outlet property="photoponExpirationDate" destination="ZDP-6K-Dfy" id="aQ3-Lp-NZj"/>
+                <outlet property="photoponLabelProfileSubtitlePerson" destination="2CP-t4-kPH" id="EM9-JS-2bQ"/>
+                <outlet property="photoponMediaFooterInfoView" destination="hhO-Bp-Oq9" id="2qS-CU-nQ6"/>
+                <outlet property="photoponMediaHeaderInfoView" destination="B6W-ZS-hCM" id="Iwf-6g-SS6"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="PhotoponBackgroundFeedItemBody.png" width="304" height="1"/>
+        <image name="PhotoponBackgroundProfileSmallDarkGray.png" width="26" height="26"/>
+        <image name="PhotoponBackgroundShadow.png" width="4" height="20"/>
+        <image name="PhotoponButtonFeedItemComment.png" width="232" height="64"/>
+        <image name="PhotoponButtonFeedItemLike-on.png" width="94" height="32"/>
+        <image name="PhotoponButtonFeedItemLike.png" width="94" height="32"/>
+        <image name="PhotoponButtonFeedItemSnip-on.png" width="94" height="32"/>
+        <image name="PhotoponButtonFeedItemSnip.png" width="94" height="32"/>
+        <image name="PhotoponPlaceholderMediaPhoto.png" width="309" height="309"/>
+        <image name="PhotoponPlaceholderProfileSmall.png" width="25" height="25"/>
+        <image name="PhotoponSeparatorComments.png" width="300" height="2"/>
+        <image name="PhotoponShadowFeedItemPhoto.png" width="312" height="3"/>
+        <image name="PhotoponSubtitleIconSmall.png" width="14" height="14"/>
+    </resources>
+</document>

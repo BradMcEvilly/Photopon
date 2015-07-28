@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" id="69m-lv-Q2s" customClass="PhotoponOfferOverlayView">
+            <rect key="frame" x="0.0" y="0.0" width="309" height="309"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" image="PhotoponShadowOfferOverlay.png" id="kBA-gD-Fy8">
+                    <rect key="frame" x="0.0" y="0.0" width="309" height="309"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="PhotoponOverlayOffer.png" id="Mtv-LX-X5w">
+                    <rect key="frame" x="0.0" y="0.0" width="309" height="309"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" image="PhotoponIconPlaceTypeRestaurant.png" id="ykC-DC-HQe">
+                    <rect key="frame" x="5" y="247" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="S1e-Sv-6Uk">
+                    <rect key="frame" x="0.0" y="286" width="320" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                    </accessibility>
+                </view>
+                <view opaque="NO" alpha="0.40000000596046448" contentMode="scaleToFill" id="6CY-FR-1UM">
+                    <rect key="frame" x="0.0" y="225" width="320" height="75"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="14" id="nWT-zf-Yrd">
+                    <rect key="frame" x="22" y="40" width="265" height="105"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES" updatesFrequently="YES"/>
+                    </accessibility>
+                    <attributedString key="attributedText">
+                        <fragment content="$45 For A 5 Course Lunch ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="24" name="JosefinSans-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <size key="shadowOffset" width="0.0" height="1"/>
+                </label>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="14" id="m73-J8-K8q">
+                    <rect key="frame" x="20" y="196" width="280" height="68"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES" updatesFrequently="YES"/>
+                    </accessibility>
+                    <attributedString key="attributedText">
+                        <fragment content="Delicious!">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="22" name="Lemon-Regular"/>
+                                <font key="NSOriginalFont" size="16" name="Lemon-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <size key="shadowOffset" width="0.0" height="1"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="24" id="Ae5-2D-hOy">
+                    <rect key="frame" x="109" y="0.0" width="90" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES" updatesFrequently="YES"/>
+                    </accessibility>
+                    <attributedString key="attributedText">
+                        <fragment content="SAVE">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="32" name="JosefinSans-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <size key="shadowOffset" width="1" height="1"/>
+                </label>
+                <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" id="ZoY-Rx-liH">
+                    <rect key="frame" x="109" y="259" width="90" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" id="ocK-qj-1gR">
+                            <rect key="frame" x="0.0" y="0.0" width="90" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="PhotoponBackgroundOfferSourceLogo.png" id="yGD-3k-LWO">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="PhotoponLogoStandardBlue-86-18.png" id="pE3-0Y-INl">
+                                    <rect key="frame" x="9" y="4" width="72" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <accessibilityTraits key="traits" none="YES" image="YES" updatesFrequently="YES"/>
+                                        <bool key="isElement" value="YES"/>
+                                    </accessibility>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <bool key="isElement" value="YES"/>
+                            </accessibility>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                </view>
+                <view hidden="YES" alpha="0.0" contentMode="scaleToFill" id="dvV-bt-rA0">
+                    <rect key="frame" x="164" y="297" width="1" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                </view>
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="PhotoponIconLocation-14-14.png" id="cxw-Z4-e9O">
+                    <rect key="frame" x="9" y="292" width="14" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="PhotoponIconLocate-14-14.png" id="2Ly-0z-z9p">
+                    <rect key="frame" x="255" y="303" width="14" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="PlaceName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" id="ykG-QG-u2x">
+                    <rect key="frame" x="27" y="292" width="227" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES"/>
+                    </accessibility>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" white="1" alpha="0.25" colorSpace="calibratedWhite"/>
+                    <size key="shadowOffset" width="0.0" height="1"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0.0 mi" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" id="uyP-ng-nsS">
+                    <rect key="frame" x="275" y="304" width="40" height="13"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES"/>
+                    </accessibility>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <size key="shadowOffset" width="0.0" height="1"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <accessibility key="accessibilityConfiguration">
+                <accessibilityTraits key="traits" none="YES" updatesFrequently="YES"/>
+                <bool key="isElement" value="YES"/>
+            </accessibility>
+            <connections>
+                <outlet property="distanceLabelView" destination="uyP-ng-nsS" id="PTh-gn-OT9"/>
+                <outlet property="offerSourceImageContainer" destination="ocK-qj-1gR" id="zUY-Se-Tu5"/>
+                <outlet property="photoponOfferDetails" destination="nWT-zf-Yrd" id="oiH-Xy-YQz"/>
+                <outlet property="photoponOfferValue" destination="Ae5-2D-hOy" id="i12-Cb-1ez"/>
+                <outlet property="photoponPersonalMessage" destination="m73-J8-K8q" id="VVz-NP-O97"/>
+                <outlet property="photoponPlaceDetails" destination="ykG-QG-u2x" id="IyI-rB-pA4"/>
+                <outlet property="sourceImageView" destination="pE3-0Y-INl" id="Fqz-zd-YOF"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="PhotoponBackgroundOfferSourceLogo.png" width="90" height="32"/>
+        <image name="PhotoponIconLocate-14-14.png" width="14" height="14"/>
+        <image name="PhotoponIconLocation-14-14.png" width="14" height="14"/>
+        <image name="PhotoponIconPlaceTypeRestaurant.png" width="76" height="76"/>
+        <image name="PhotoponLogoStandardBlue-86-18.png" width="72" height="24"/>
+        <image name="PhotoponOverlayOffer.png" width="320" height="320"/>
+        <image name="PhotoponShadowOfferOverlay.png" width="320" height="320"/>
+    </resources>
+</document>

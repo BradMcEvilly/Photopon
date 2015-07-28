@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoponUIWebViewController">
+            <connections>
+                <outlet property="backButton" destination="9rP-G2-IcR" id="4B4-Vv-5my"/>
+                <outlet property="forwardButton" destination="Vsa-rx-6kV" id="wge-JP-e60"/>
+                <outlet property="refreshButton" destination="OOf-Td-Tpb" id="0cf-vq-1Ke"/>
+                <outlet property="toolbar" destination="pgs-Mq-296" id="7ba-pd-To4"/>
+                <outlet property="view" destination="yvb-np-DEd" id="eRi-ct-gqR"/>
+                <outlet property="webView" destination="E77-wn-qCW" id="Kvf-2X-LPO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="yvb-np-DEd">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E77-wn-qCW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="X7H-T3-jbx"/>
+                    </connections>
+                </webView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="bottom" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="pgs-Mq-296">
+                    <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="33l-PL-coV"/>
+                        <barButtonItem image="left.png" width="24" style="plain" id="9rP-G2-IcR">
+                            <connections>
+                                <action selector="goBack" destination="-1" id="zEr-6T-EVq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="wdL-0H-RIt"/>
+                        <barButtonItem image="right.png" width="24" style="plain" id="Vsa-rx-6kV">
+                            <connections>
+                                <action selector="goForward" destination="-1" id="Ko9-Kr-cUN"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="suB-tQ-GXB"/>
+                        <barButtonItem style="plain" systemItem="refresh" id="OOf-Td-Tpb">
+                            <inset key="imageInsets" minX="2" minY="0.0" maxX="-2" maxY="0.0"/>
+                            <connections>
+                                <action selector="reload" destination="-1" id="w88-H1-3lE"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="qFX-7L-yPx"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="left.png" width="16" height="22"/>
+        <image name="right.png" width="16" height="22"/>
+    </resources>
+</document>
